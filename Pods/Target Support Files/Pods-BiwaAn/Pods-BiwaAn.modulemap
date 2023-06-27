@@ -1,0 +1,6 @@
+framework module Pods_BiwaAn {
+  umbrella header "Pods-BiwaAn-umbrella.h"
+
+  export *
+  module * { export * }
+}
