@@ -34,7 +34,33 @@ class LoginViewController: UIViewController {
         self.navigationController?.pushViewController(RegisterViewController(nibName: "RegisterViewController", bundle: nil), animated: true)
     }
     @IBAction func actionbtnLogin(_ sender: Any) {
-        self.navigationController?.pushViewController(HomeViewController(nibName: "HomeViewController", bundle: nil), animated: true)
+        let homeVC = HomeViewController(nibName: "HomeViewController", bundle: nil)
+        let homeNavi = UINavigationController(rootViewController: homeVC)
+        homeNavi.tabBarItem = UITabBarItem(title: "Trang chủ", image: UIImage(named: "icon_home"), selectedImage: UIImage(named: "icon_home"))
+        
+        //Messages
+        
+        let cartVC = CartViewController(nibName: "CartViewController", bundle: nil)
+        let cartNavi = UINavigationController(rootViewController: cartVC )
+        cartVC.tabBarItem = UITabBarItem(title: "Giỏ hàng", image: UIImage(named: "icon_cart"), selectedImage: UIImage(named: "icon_cart"))
+        
+        let settingVC = SettingBiwaViewController(nibName: "SettingBiwaViewController", bundle: nil)
+        let settingNavi = UINavigationController(rootViewController: settingVC )
+        settingVC.tabBarItem = UITabBarItem(title: "Cài đặt", image: UIImage(named: "icon_setting"), selectedImage: UIImage(named: "icon_setting"))
+        
+        
+        //tabbar controller
+        let tabbarController = UITabBarController()
+        tabbarController.viewControllers = [homeNavi, cartNavi, settingNavi]
+        tabbarController.tabBar.tintColor = .red
+        tabbarController.view.backgroundColor = .white
+        
+        guard let delegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate,
+              let window = delegate.window else { return }
+        window.rootViewController = tabbarController
+        window.makeKeyAndVisible()
+        
+        
     }
     
     @IBAction func actionbtnFogotPass(_ sender: Any) {

@@ -77,99 +77,33 @@
                     <textInputTraits key="textInputTraits"/>
                 </searchBar>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="GsB-6R-fFc">
-                    <rect key="frame" x="0.0" y="154" width="414" height="682"/>
+                    <rect key="frame" x="0.0" y="154" width="414" height="708"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
-                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bP6-3M-qC1">
-                    <rect key="frame" x="0.0" y="836" width="414" height="60"/>
-                    <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mwV-yu-ltT">
-                            <rect key="frame" x="0.0" y="0.0" width="138" height="60"/>
-                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                            <state key="normal" title="Button" image="icon_home"/>
-                            <buttonConfiguration key="configuration" style="plain" image="icon_home" title="Trang chủ" imagePadding="5">
-                                <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
-                            </buttonConfiguration>
-                            <connections>
-                                <action selector="actionbtnHome:" destination="-1" eventType="touchUpInside" id="etA-JY-PPm"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i01-Hz-07V">
-                            <rect key="frame" x="138" y="0.0" width="138" height="60"/>
-                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                            <state key="normal" title="Button" image="icon_home"/>
-                            <buttonConfiguration key="configuration" style="plain" image="icon_cart" title="Giỏ hàng" imagePadding="5">
-                                <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
-                            </buttonConfiguration>
-                            <connections>
-                                <action selector="actionbtnCart:" destination="-1" eventType="touchUpInside" id="jU8-Vo-KF6"/>
-                                <action selector="actionbtnHome:" destination="-1" eventType="touchUpInside" id="whq-y4-qNH"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hx9-u3-qbU">
-                            <rect key="frame" x="276" y="0.0" width="138" height="60"/>
-                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                            <state key="normal" title="Button" image="icon_home"/>
-                            <buttonConfiguration key="configuration" style="plain" image="icon_setting" title="Cài đặt" imagePadding="5">
-                                <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
-                            </buttonConfiguration>
-                            <connections>
-                                <action selector="actionbtnSetting:" destination="-1" eventType="touchUpInside" id="9La-HD-4HQ"/>
-                            </connections>
-                        </button>
-                    </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="60" id="AjN-Ir-4hT"/>
-                    </constraints>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="color" keyPath="tr_borderColor">
-                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="number" keyPath="tr_borderWidth">
-                            <real key="value" value="1"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="number" keyPath="tr_cornerRadius">
-                            <real key="value" value="0.0"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemGray5Color"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="oUs-hh-Xc5" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="1ob-8F-zq4"/>
-                <constraint firstAttribute="bottom" secondItem="bP6-3M-qC1" secondAttribute="bottom" id="Agt-t7-Rf5"/>
                 <constraint firstItem="dHf-Pg-ht6" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-13" id="K0N-bg-83H"/>
                 <constraint firstItem="dHf-Pg-ht6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="13" id="Qtl-hI-SFZ"/>
                 <constraint firstItem="dHf-Pg-ht6" firstAttribute="top" secondItem="oUs-hh-Xc5" secondAttribute="bottom" constant="14" id="Yg4-f6-LAT"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GsB-6R-fFc" secondAttribute="trailing" id="cUc-Gs-ELP"/>
-                <constraint firstItem="bP6-3M-qC1" firstAttribute="top" secondItem="GsB-6R-fFc" secondAttribute="bottom" id="ctT-xF-rTI"/>
                 <constraint firstItem="GsB-6R-fFc" firstAttribute="top" secondItem="dHf-Pg-ht6" secondAttribute="bottom" constant="5" id="d0z-Bh-26V"/>
                 <constraint firstItem="GsB-6R-fFc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="eUe-dn-KNe"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oUs-hh-Xc5" secondAttribute="trailing" id="hPQ-0Y-ofn"/>
                 <constraint firstItem="oUs-hh-Xc5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ih2-LQ-yX7"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bP6-3M-qC1" secondAttribute="trailing" id="oa6-Nc-JmW"/>
-                <constraint firstItem="bP6-3M-qC1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="yql-8o-vdd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="GsB-6R-fFc" secondAttribute="bottom" id="xiv-O0-ABa"/>
             </constraints>
             <point key="canvasLocation" x="139" y="78"/>
         </view>
     </objects>
     <resources>
-        <image name="icon_cart" width="35.5" height="35"/>
         <image name="icon_chat" width="20" height="20"/>
-        <image name="icon_home" width="24" height="23.5"/>
         <image name="icon_language" width="24" height="24"/>
-        <image name="icon_setting" width="35.5" height="36"/>
         <image name="icon_user" width="22.5" height="20"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

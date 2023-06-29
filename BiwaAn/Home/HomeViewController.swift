@@ -22,17 +22,6 @@ class HomeViewController: UIViewController {
     }
     
     
-    @IBAction func actionbtnHome(_ sender: Any) {
-        
-    }
-    
-    @IBAction func actionbtnCart(_ sender: Any) {
-        
-    }
-    @IBAction func actionbtnSetting(_ sender: Any) {
-        
-    }
-    
 }
 
 extension HomeViewController: UITableViewDataSource {
@@ -82,6 +71,8 @@ extension HomeViewController: UITableViewDelegate {
 
 extension HomeViewController: TemplateTableViewProtocol {
     func didSelected(item: dataTemplate) {
-        print("[response]: \(item)")
+        let vc = ProductVariantViewController(nibName: "ProductVariantViewController", bundle: nil)
+        vc.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(vc , animated: true)
     }
 }

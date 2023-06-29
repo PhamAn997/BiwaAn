@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ProductVariantCollectionViewCell" customModule="BiwaAn" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="220" height="471"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="220" height="471"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aRe-67-EY6" userLabel="contentView">
+                        <rect key="frame" x="0.0" y="0.0" width="192" height="471"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hGU-S7-su0">
+                                <rect key="frame" x="0.0" y="0.0" width="192" height="214"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hGU-S7-su0" secondAttribute="height" multiplier="141:157" id="I5h-N9-KFc"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="mgp-eb-Auv">
+                                <rect key="frame" x="0.0" y="221" width="192" height="66.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xhy-1L-AGo" userLabel="Name">
+                                        <rect key="frame" x="0.0" y="0.0" width="192" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buM-IM-skH" userLabel="Genres">
+                                        <rect key="frame" x="0.0" y="23.5" width="192" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nS9-F4-jen" userLabel="Money">
+                                        <rect key="frame" x="0.0" y="47" width="192" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mgp-eb-Auv" firstAttribute="top" secondItem="hGU-S7-su0" secondAttribute="bottom" constant="7" id="FHo-iG-kLr"/>
+                            <constraint firstAttribute="trailing" secondItem="mgp-eb-Auv" secondAttribute="trailing" id="QZN-gU-YmO"/>
+                            <constraint firstItem="mgp-eb-Auv" firstAttribute="leading" secondItem="aRe-67-EY6" secondAttribute="leading" id="Rjc-1K-4wT"/>
+                            <constraint firstAttribute="trailing" secondItem="hGU-S7-su0" secondAttribute="trailing" id="XyJ-f5-C27"/>
+                            <constraint firstItem="hGU-S7-su0" firstAttribute="leading" secondItem="aRe-67-EY6" secondAttribute="leading" id="bKG-Ji-VGZ"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="mgp-eb-Auv" secondAttribute="bottom" constant="15" id="dOf-cb-XjH"/>
+                            <constraint firstItem="hGU-S7-su0" firstAttribute="top" secondItem="aRe-67-EY6" secondAttribute="top" id="smM-mI-rPU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="aRe-67-EY6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2vA-of-fM6"/>
+                <constraint firstAttribute="trailing" secondItem="aRe-67-EY6" secondAttribute="trailing" constant="28" id="5OL-Ah-Dw6"/>
+                <constraint firstItem="aRe-67-EY6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="S1t-H4-wzG"/>
+                <constraint firstAttribute="bottom" secondItem="aRe-67-EY6" secondAttribute="bottom" id="aAS-Dr-vA3"/>
+            </constraints>
+            <size key="customSize" width="220" height="471"/>
+            <connections>
+                <outlet property="imageLogo" destination="hGU-S7-su0" id="Mdn-VF-cn3"/>
+                <outlet property="labelGenres" destination="buM-IM-skH" id="XcP-X3-2qG"/>
+                <outlet property="labelMoney" destination="nS9-F4-jen" id="Z9W-cP-ynm"/>
+                <outlet property="labelName" destination="Xhy-1L-AGo" id="bvd-50-al7"/>
+            </connections>
+            <point key="canvasLocation" x="78.260869565217391" y="182.47767857142856"/>
+        </collectionViewCell>
+    </objects>
+</document>
