@@ -16,8 +16,6 @@ class TypePhoneTableViewCell: UITableViewCell {
                                   dataTypePhone(name: "Iphone 11 Pro "),
                                   dataTypePhone(name: "Iphone 11 Pro "),
                                   dataTypePhone(name: "Iphone 11 Pro ")]
-                                  
-                                                                        
     @IBOutlet weak var typePhoneCollectionView: UICollectionView!
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -59,6 +57,10 @@ extension TypePhoneTableViewCell : UICollectionViewDelegate,UICollectionViewDele
     }
 }
 
+
+
 struct dataTypePhone {
     var name: String
 }
+
+

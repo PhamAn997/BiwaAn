@@ -8,9 +8,13 @@
 import UIKit
 
 class SelectPhoneTableViewCell: UITableViewCell {
-    var data: [dataSelect] = [dataSelect(name: "Iphone"),dataSelect(name: "SamSung"),
-                              dataSelect(name: "Bphone"),dataSelect(name: "Oppo"),
-                              dataSelect(name: "Nokia"),dataSelect(name: "Iphone")]
+    var selectedIndexPath: IndexPath?
+    var data: [dataSelect] = [dataSelect(name: "Iphone", isSelected: true),
+                              dataSelect(name: "SamSung"),
+                              dataSelect(name: "Bphone"),
+                              dataSelect(name: "Oppo"),
+                              dataSelect(name: "Nokia"),
+                              dataSelect(name: "Iphone")]
     @IBOutlet weak var selectPhoneCollectionView: UICollectionView!
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -18,11 +22,12 @@ class SelectPhoneTableViewCell: UITableViewCell {
         selectPhoneCollectionView.dataSource = self
         selectPhoneCollectionView.delegate = self
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
     }
+    
     
 }
 extension SelectPhoneTableViewCell : UICollectionViewDataSource {
@@ -33,22 +38,36 @@ extension SelectPhoneTableViewCell : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SelectPhoneCollectionViewCell", for: indexPath) as! SelectPhoneCollectionViewCell
         cell.configCell(model: data[indexPath.row])
-
-        
         return cell
     }
 }
 
 extension SelectPhoneTableViewCell: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let height = collectionView.frame.height
         let width = data[indexPath.row].name.widthOfString(usingFont: .medium(size: 16))
-            
-            return CGSize(width: width + 30, height: height)
+        return CGSize(width: width + 30, height: height)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        data.forEach { item in
+            item.isSelected = false
+        }
+        data[indexPath.row].isSelected = true
+        selectPhoneCollectionView.reloadData()
+        
+    }
+    
 }
-
-struct dataSelect {
+class dataSelect {
     var name: String
+    var isSelected: Bool
+    
+    init(name: String, isSelected: Bool = false) {
+        self.name = name
+        self.isSelected = isSelected
+    }
 }
 

@@ -9,7 +9,6 @@ import UIKit
 
 class SelectPhoneCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var lableName: UILabel!
-    
     @IBOutlet weak var dashView: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -17,5 +16,14 @@ class SelectPhoneCollectionViewCell: UICollectionViewCell {
     }
     func configCell (model: dataSelect) {
         lableName.text = model.name
+        if model.isSelected {
+            lableName.textColor = UIColor.black
+            dashView.backgroundColor = .black
+        } else {
+            lableName.textColor = UIColor.init(hexString: "9A9A9A")
+            dashView.backgroundColor = .clear
+        }
+        
     }
+    
 }
