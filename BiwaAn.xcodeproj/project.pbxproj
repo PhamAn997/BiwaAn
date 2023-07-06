@@ -58,6 +58,15 @@
 		6DD03A5C2A4C134900DEA1E5 /* SelectedTemplateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DD03A5A2A4C134900DEA1E5 /* SelectedTemplateViewController.xib */; };
 		6DD03A602A4C157D00DEA1E5 /* EditorPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD03A5E2A4C157D00DEA1E5 /* EditorPhoneViewController.swift */; };
 		6DD03A612A4C157D00DEA1E5 /* EditorPhoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DD03A5F2A4C157D00DEA1E5 /* EditorPhoneViewController.xib */; };
+		6DDAA9F52A5680D700B3D27B /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDAA9F42A5680D700B3D27B /* BaseAPI.swift */; };
+		6DDAA9F72A5680DF00B3D27B /* ConfigurationBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDAA9F62A5680DF00B3D27B /* ConfigurationBase.swift */; };
+		6DDAAA002A56DDA800B3D27B /* TemplateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDAA9FE2A56DDA800B3D27B /* TemplateCollectionViewCell.swift */; };
+		6DDAAA012A56DDA800B3D27B /* TemplateCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DDAA9FF2A56DDA800B3D27B /* TemplateCollectionViewCell.xib */; };
+		6DDAAA062A56E0B100B3D27B /* SelectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDAAA042A56E0B100B3D27B /* SelectCollectionViewCell.swift */; };
+		6DDAAA072A56E0B100B3D27B /* SelectCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DDAAA052A56E0B100B3D27B /* SelectCollectionViewCell.xib */; };
+		6DDAAA0A2A56E0C000B3D27B /* TypePhoneCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDAAA082A56E0C000B3D27B /* TypePhoneCollectionViewCell.swift */; };
+		6DDAAA0B2A56E0C000B3D27B /* TypePhoneCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DDAAA092A56E0C000B3D27B /* TypePhoneCollectionViewCell.xib */; };
+		6DDAAA0D2A56E3B300B3D27B /* HomeReponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDAAA0C2A56E3B300B3D27B /* HomeReponseModel.swift */; };
 		6DE4BC632A4C3738007C7F56 /* SettingBiwaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE4BC612A4C3738007C7F56 /* SettingBiwaViewController.swift */; };
 		6DE4BC642A4C3738007C7F56 /* SettingBiwaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DE4BC622A4C3738007C7F56 /* SettingBiwaViewController.xib */; };
 		6DE4BC682A4C5576007C7F56 /* InfoShippingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE4BC662A4C5576007C7F56 /* InfoShippingViewController.swift */; };
@@ -72,18 +81,6 @@
 		6DE4BC7D2A4C8BB8007C7F56 /* NewFileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DE4BC7B2A4C8BB8007C7F56 /* NewFileViewController.xib */; };
 		6DE4BC812A4C8D27007C7F56 /* NewOfferTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE4BC7F2A4C8D27007C7F56 /* NewOfferTableViewCell.swift */; };
 		6DE4BC822A4C8D27007C7F56 /* NewOfferTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DE4BC802A4C8D27007C7F56 /* NewOfferTableViewCell.xib */; };
-		6DE5B7B22A4AC5710002607A /* TemplateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE5B7B02A4AC5710002607A /* TemplateTableViewCell.swift */; };
-		6DE5B7B32A4AC5710002607A /* TemplateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DE5B7B12A4AC5710002607A /* TemplateTableViewCell.xib */; };
-		6DE5B7B62A4AC5810002607A /* SelectPhoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE5B7B42A4AC5810002607A /* SelectPhoneTableViewCell.swift */; };
-		6DE5B7B72A4AC5810002607A /* SelectPhoneTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DE5B7B52A4AC5810002607A /* SelectPhoneTableViewCell.xib */; };
-		6DE5B7BB2A4AC5F60002607A /* SelectPhoneCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE5B7B92A4AC5F60002607A /* SelectPhoneCollectionViewCell.swift */; };
-		6DE5B7BC2A4AC5F60002607A /* SelectPhoneCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DE5B7BA2A4AC5F60002607A /* SelectPhoneCollectionViewCell.xib */; };
-		6DE5B7C02A4AC69D0002607A /* TemplateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE5B7BE2A4AC69D0002607A /* TemplateCollectionViewCell.swift */; };
-		6DE5B7C12A4AC69D0002607A /* TemplateCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DE5B7BF2A4AC69D0002607A /* TemplateCollectionViewCell.xib */; };
-		6DE5B7C52A4AEB5F0002607A /* TypePhoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE5B7C32A4AEB5F0002607A /* TypePhoneTableViewCell.swift */; };
-		6DE5B7C62A4AEB5F0002607A /* TypePhoneTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DE5B7C42A4AEB5F0002607A /* TypePhoneTableViewCell.xib */; };
-		6DE5B7CA2A4AEB900002607A /* TypePhoneCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE5B7C82A4AEB900002607A /* TypePhoneCollectionViewCell.swift */; };
-		6DE5B7CB2A4AEB900002607A /* TypePhoneCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DE5B7C92A4AEB900002607A /* TypePhoneCollectionViewCell.xib */; };
 		F1C62E71B127F9E30AF3512D /* Pods_BiwaAn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA1349362E8AF6589514E8D /* Pods_BiwaAn.framework */; };
 /* End PBXBuildFile section */
 
@@ -142,6 +139,15 @@
 		6DD03A5A2A4C134900DEA1E5 /* SelectedTemplateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectedTemplateViewController.xib; sourceTree = "<group>"; };
 		6DD03A5E2A4C157D00DEA1E5 /* EditorPhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorPhoneViewController.swift; sourceTree = "<group>"; };
 		6DD03A5F2A4C157D00DEA1E5 /* EditorPhoneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditorPhoneViewController.xib; sourceTree = "<group>"; };
+		6DDAA9F42A5680D700B3D27B /* BaseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		6DDAA9F62A5680DF00B3D27B /* ConfigurationBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationBase.swift; sourceTree = "<group>"; };
+		6DDAA9FE2A56DDA800B3D27B /* TemplateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateCollectionViewCell.swift; sourceTree = "<group>"; };
+		6DDAA9FF2A56DDA800B3D27B /* TemplateCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TemplateCollectionViewCell.xib; sourceTree = "<group>"; };
+		6DDAAA042A56E0B100B3D27B /* SelectCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCollectionViewCell.swift; sourceTree = "<group>"; };
+		6DDAAA052A56E0B100B3D27B /* SelectCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectCollectionViewCell.xib; sourceTree = "<group>"; };
+		6DDAAA082A56E0C000B3D27B /* TypePhoneCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypePhoneCollectionViewCell.swift; sourceTree = "<group>"; };
+		6DDAAA092A56E0C000B3D27B /* TypePhoneCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TypePhoneCollectionViewCell.xib; sourceTree = "<group>"; };
+		6DDAAA0C2A56E3B300B3D27B /* HomeReponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReponseModel.swift; sourceTree = "<group>"; };
 		6DE4BC612A4C3738007C7F56 /* SettingBiwaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingBiwaViewController.swift; sourceTree = "<group>"; };
 		6DE4BC622A4C3738007C7F56 /* SettingBiwaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingBiwaViewController.xib; sourceTree = "<group>"; };
 		6DE4BC662A4C5576007C7F56 /* InfoShippingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoShippingViewController.swift; sourceTree = "<group>"; };
@@ -156,18 +162,6 @@
 		6DE4BC7B2A4C8BB8007C7F56 /* NewFileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewFileViewController.xib; sourceTree = "<group>"; };
 		6DE4BC7F2A4C8D27007C7F56 /* NewOfferTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOfferTableViewCell.swift; sourceTree = "<group>"; };
 		6DE4BC802A4C8D27007C7F56 /* NewOfferTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewOfferTableViewCell.xib; sourceTree = "<group>"; };
-		6DE5B7B02A4AC5710002607A /* TemplateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateTableViewCell.swift; sourceTree = "<group>"; };
-		6DE5B7B12A4AC5710002607A /* TemplateTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TemplateTableViewCell.xib; sourceTree = "<group>"; };
-		6DE5B7B42A4AC5810002607A /* SelectPhoneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPhoneTableViewCell.swift; sourceTree = "<group>"; };
-		6DE5B7B52A4AC5810002607A /* SelectPhoneTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectPhoneTableViewCell.xib; sourceTree = "<group>"; };
-		6DE5B7B92A4AC5F60002607A /* SelectPhoneCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPhoneCollectionViewCell.swift; sourceTree = "<group>"; };
-		6DE5B7BA2A4AC5F60002607A /* SelectPhoneCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectPhoneCollectionViewCell.xib; sourceTree = "<group>"; };
-		6DE5B7BE2A4AC69D0002607A /* TemplateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateCollectionViewCell.swift; sourceTree = "<group>"; };
-		6DE5B7BF2A4AC69D0002607A /* TemplateCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TemplateCollectionViewCell.xib; sourceTree = "<group>"; };
-		6DE5B7C32A4AEB5F0002607A /* TypePhoneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypePhoneTableViewCell.swift; sourceTree = "<group>"; };
-		6DE5B7C42A4AEB5F0002607A /* TypePhoneTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TypePhoneTableViewCell.xib; sourceTree = "<group>"; };
-		6DE5B7C82A4AEB900002607A /* TypePhoneCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypePhoneCollectionViewCell.swift; sourceTree = "<group>"; };
-		6DE5B7C92A4AEB900002607A /* TypePhoneCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TypePhoneCollectionViewCell.xib; sourceTree = "<group>"; };
 		8FD12B8F575F22F33CEC8A44 /* Pods-BiwaAn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiwaAn.debug.xcconfig"; path = "Target Support Files/Pods-BiwaAn/Pods-BiwaAn.debug.xcconfig"; sourceTree = "<group>"; };
 		CDA1349362E8AF6589514E8D /* Pods_BiwaAn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BiwaAn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -205,6 +199,7 @@
 		6D0EEEB22A49316E000248A7 /* BiwaAn */ = {
 			isa = PBXGroup;
 			children = (
+				6DDAA9F32A5680C300B3D27B /* Service */,
 				6D51E2F42A4CA86A00CD53AE /* Address */,
 				6D51E2EA2A4C98A100CD53AE /* Discount */,
 				6DE4BC792A4C8BA5007C7F56 /* NewOffer */,
@@ -359,6 +354,7 @@
 			children = (
 				6DE5B7AD2A4AC4FD0002607A /* Cell */,
 				6D9D93502A4ABD6D00AEA0F3 /* HomeViewController.swift */,
+				6DDAAA0C2A56E3B300B3D27B /* HomeReponseModel.swift */,
 				6D9D93512A4ABD6D00AEA0F3 /* HomeViewController.xib */,
 			);
 			path = Home;
@@ -420,6 +416,50 @@
 			path = EditorPhone;
 			sourceTree = "<group>";
 		};
+		6DDAA9F32A5680C300B3D27B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				6DDAA9F82A56987200B3D27B /* Reponse */,
+				6DDAA9F62A5680DF00B3D27B /* ConfigurationBase.swift */,
+				6DDAA9F42A5680D700B3D27B /* BaseAPI.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		6DDAA9F82A56987200B3D27B /* Reponse */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Reponse;
+			sourceTree = "<group>";
+		};
+		6DDAA9FD2A56DD7F00B3D27B /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				6DDAA9FE2A56DDA800B3D27B /* TemplateCollectionViewCell.swift */,
+				6DDAA9FF2A56DDA800B3D27B /* TemplateCollectionViewCell.xib */,
+			);
+			path = Template;
+			sourceTree = "<group>";
+		};
+		6DDAAA022A56DDB500B3D27B /* Selected */ = {
+			isa = PBXGroup;
+			children = (
+				6DDAAA042A56E0B100B3D27B /* SelectCollectionViewCell.swift */,
+				6DDAAA052A56E0B100B3D27B /* SelectCollectionViewCell.xib */,
+			);
+			path = Selected;
+			sourceTree = "<group>";
+		};
+		6DDAAA032A56DDBE00B3D27B /* TypePhone */ = {
+			isa = PBXGroup;
+			children = (
+				6DDAAA082A56E0C000B3D27B /* TypePhoneCollectionViewCell.swift */,
+				6DDAAA092A56E0C000B3D27B /* TypePhoneCollectionViewCell.xib */,
+			);
+			path = TypePhone;
+			sourceTree = "<group>";
+		};
 		6DE4BC652A4C5528007C7F56 /* InfoShipping */ = {
 			isa = PBXGroup;
 			children = (
@@ -479,66 +519,9 @@
 		6DE5B7AD2A4AC4FD0002607A /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				6DE5B7C22A4AEB2D0002607A /* TypePhone */,
-				6DE5B7AF2A4AC5370002607A /* SelectPhone */,
-				6DE5B7AE2A4AC5010002607A /* Template */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		6DE5B7AE2A4AC5010002607A /* Template */ = {
-			isa = PBXGroup;
-			children = (
-				6DE5B7BD2A4AC6810002607A /* Cell */,
-				6DE5B7B02A4AC5710002607A /* TemplateTableViewCell.swift */,
-				6DE5B7B12A4AC5710002607A /* TemplateTableViewCell.xib */,
-			);
-			path = Template;
-			sourceTree = "<group>";
-		};
-		6DE5B7AF2A4AC5370002607A /* SelectPhone */ = {
-			isa = PBXGroup;
-			children = (
-				6DE5B7B82A4AC5D40002607A /* Cell */,
-				6DE5B7B42A4AC5810002607A /* SelectPhoneTableViewCell.swift */,
-				6DE5B7B52A4AC5810002607A /* SelectPhoneTableViewCell.xib */,
-			);
-			path = SelectPhone;
-			sourceTree = "<group>";
-		};
-		6DE5B7B82A4AC5D40002607A /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				6DE5B7B92A4AC5F60002607A /* SelectPhoneCollectionViewCell.swift */,
-				6DE5B7BA2A4AC5F60002607A /* SelectPhoneCollectionViewCell.xib */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		6DE5B7BD2A4AC6810002607A /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				6DE5B7BE2A4AC69D0002607A /* TemplateCollectionViewCell.swift */,
-				6DE5B7BF2A4AC69D0002607A /* TemplateCollectionViewCell.xib */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		6DE5B7C22A4AEB2D0002607A /* TypePhone */ = {
-			isa = PBXGroup;
-			children = (
-				6DE5B7C72A4AEB640002607A /* Cell */,
-				6DE5B7C32A4AEB5F0002607A /* TypePhoneTableViewCell.swift */,
-				6DE5B7C42A4AEB5F0002607A /* TypePhoneTableViewCell.xib */,
-			);
-			path = TypePhone;
-			sourceTree = "<group>";
-		};
-		6DE5B7C72A4AEB640002607A /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				6DE5B7C82A4AEB900002607A /* TypePhoneCollectionViewCell.swift */,
-				6DE5B7C92A4AEB900002607A /* TypePhoneCollectionViewCell.xib */,
+				6DDAAA032A56DDBE00B3D27B /* TypePhone */,
+				6DDAAA022A56DDB500B3D27B /* Selected */,
+				6DDAA9FD2A56DD7F00B3D27B /* Template */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -615,30 +598,27 @@
 				6DE4BC782A4C8196007C7F56 /* DeleteAccViewController.xib in Resources */,
 				6D0EEEC32A493172000248A7 /* LaunchScreen.storyboard in Resources */,
 				6D9D934E2A49915F00AEA0F3 /* FogotPassViewController.xib in Resources */,
-				6DE5B7C62A4AEB5F0002607A /* TypePhoneTableViewCell.xib in Resources */,
+				6DDAAA0B2A56E0C000B3D27B /* TypePhoneCollectionViewCell.xib in Resources */,
 				6D27C55D2A4B27CD00360C82 /* ProfileViewController.xib in Resources */,
 				6DE4BC822A4C8D27007C7F56 /* NewOfferTableViewCell.xib in Resources */,
 				6DD03A492A4BDF1D00DEA1E5 /* ProductVariantCollectionViewCell.xib in Resources */,
-				6DE5B7CB2A4AEB900002607A /* TypePhoneCollectionViewCell.xib in Resources */,
-				6DE5B7BC2A4AC5F60002607A /* SelectPhoneCollectionViewCell.xib in Resources */,
 				6DD03A5C2A4C134900DEA1E5 /* SelectedTemplateViewController.xib in Resources */,
 				6D51E2EE2A4C98C100CD53AE /* DiscounViewController.xib in Resources */,
-				6DE5B7B72A4AC5810002607A /* SelectPhoneTableViewCell.xib in Resources */,
 				6DE4BC732A4C5BED007C7F56 /* ChangePassViewController.xib in Resources */,
 				6DE4BC642A4C3738007C7F56 /* SettingBiwaViewController.xib in Resources */,
 				6D0EEEC02A493172000248A7 /* Assets.xcassets in Resources */,
 				6D0EEECE2A493204000248A7 /* LoginViewController.xib in Resources */,
 				6DD03A612A4C157D00DEA1E5 /* EditorPhoneViewController.xib in Resources */,
 				6DD03A4E2A4BF39A00DEA1E5 /* ChooseProductViewController.xib in Resources */,
-				6DE5B7C12A4AC69D0002607A /* TemplateCollectionViewCell.xib in Resources */,
 				6D9D93482A497DBE00AEA0F3 /* RegisterViewController.xib in Resources */,
 				6D51E2F32A4CA25800CD53AE /* DiscountTableViewCell.xib in Resources */,
 				6DE4BC6E2A4C572A007C7F56 /* InfoShippingTableViewCell.xib in Resources */,
 				6DD03A442A4BDA8100DEA1E5 /* ProductVariantViewController.xib in Resources */,
-				6DE5B7B32A4AC5710002607A /* TemplateTableViewCell.xib in Resources */,
+				6DDAAA072A56E0B100B3D27B /* SelectCollectionViewCell.xib in Resources */,
 				6DD03A572A4C04E400DEA1E5 /* ChooseViewController.xib in Resources */,
 				6D51E2F82A4CA88C00CD53AE /* AddressViewController.xib in Resources */,
 				6D27C5672A4B286F00360C82 /* CartViewController.xib in Resources */,
+				6DDAAA012A56DDA800B3D27B /* TemplateCollectionViewCell.xib in Resources */,
 				6DE4BC692A4C5576007C7F56 /* InfoShippingViewController.xib in Resources */,
 				6D9D93532A4ABD6D00AEA0F3 /* HomeViewController.xib in Resources */,
 				6DE4BC7D2A4C8BB8007C7F56 /* NewFileViewController.xib in Resources */,
@@ -694,16 +674,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DE5B7CA2A4AEB900002607A /* TypePhoneCollectionViewCell.swift in Sources */,
 				6D0EEEB82A49316E000248A7 /* ViewController.swift in Sources */,
 				6D552BA12A497AEE0095BAF8 /* UIFontExtension.swift in Sources */,
 				6DE4BC7C2A4C8BB8007C7F56 /* NewFileViewController.swift in Sources */,
 				6D552B9E2A497AEE0095BAF8 /* UITapGestureRecognizer.swift in Sources */,
 				6D9D934D2A49915F00AEA0F3 /* FogotPassViewController.swift in Sources */,
 				6D552B962A497AEE0095BAF8 /* UINavigationExtension.swift in Sources */,
+				6DDAAA0D2A56E3B300B3D27B /* HomeReponseModel.swift in Sources */,
 				6DD03A432A4BDA8100DEA1E5 /* ProductVariantViewController.swift in Sources */,
-				6DE5B7B62A4AC5810002607A /* SelectPhoneTableViewCell.swift in Sources */,
-				6DE5B7C52A4AEB5F0002607A /* TypePhoneTableViewCell.swift in Sources */,
 				6D552B9F2A497AEE0095BAF8 /* NSMutableAttributedString.swift in Sources */,
 				6D9D93522A4ABD6D00AEA0F3 /* HomeViewController.swift in Sources */,
 				6DD03A4D2A4BF39A00DEA1E5 /* ChooseProductViewController.swift in Sources */,
@@ -716,21 +694,21 @@
 				6D9D93472A497DBE00AEA0F3 /* RegisterViewController.swift in Sources */,
 				6D51E2ED2A4C98C100CD53AE /* DiscounViewController.swift in Sources */,
 				6DE4BC682A4C5576007C7F56 /* InfoShippingViewController.swift in Sources */,
-				6DE5B7C02A4AC69D0002607A /* TemplateCollectionViewCell.swift in Sources */,
 				6D552B9B2A497AEE0095BAF8 /* ViewProtocol.swift in Sources */,
-				6DE5B7B22A4AC5710002607A /* TemplateTableViewCell.swift in Sources */,
 				6D552B952A497AEE0095BAF8 /* StringExtension.swift in Sources */,
 				6DE4BC812A4C8D27007C7F56 /* NewOfferTableViewCell.swift in Sources */,
 				6D552B9D2A497AEE0095BAF8 /* UIStoryboardExtension.swift in Sources */,
 				6DE4BC772A4C8196007C7F56 /* DeleteAccViewController.swift in Sources */,
-				6DE5B7BB2A4AC5F60002607A /* SelectPhoneCollectionViewCell.swift in Sources */,
 				6D0EEEBE2A49316E000248A7 /* BiwaAn.xcdatamodeld in Sources */,
 				6DE4BC6D2A4C572A007C7F56 /* InfoShippingTableViewCell.swift in Sources */,
 				6DD03A602A4C157D00DEA1E5 /* EditorPhoneViewController.swift in Sources */,
 				6D0EEEB42A49316E000248A7 /* AppDelegate.swift in Sources */,
 				6D0EEECD2A493204000248A7 /* LoginViewController.swift in Sources */,
 				6DD03A482A4BDF1D00DEA1E5 /* ProductVariantCollectionViewCell.swift in Sources */,
+				6DDAAA002A56DDA800B3D27B /* TemplateCollectionViewCell.swift in Sources */,
+				6DDAAA062A56E0B100B3D27B /* SelectCollectionViewCell.swift in Sources */,
 				6D51E2F22A4CA25800CD53AE /* DiscountTableViewCell.swift in Sources */,
+				6DDAA9F72A5680DF00B3D27B /* ConfigurationBase.swift in Sources */,
 				6D0EEEB62A49316E000248A7 /* SceneDelegate.swift in Sources */,
 				6DE4BC632A4C3738007C7F56 /* SettingBiwaViewController.swift in Sources */,
 				6DD03A562A4C04E400DEA1E5 /* ChooseViewController.swift in Sources */,
@@ -739,6 +717,8 @@
 				6D27C5662A4B286F00360C82 /* CartViewController.swift in Sources */,
 				6D552B972A497AEE0095BAF8 /* DropDown.swift in Sources */,
 				6D552B9A2A497AEE0095BAF8 /* UIColorExtension.swift in Sources */,
+				6DDAA9F52A5680D700B3D27B /* BaseAPI.swift in Sources */,
+				6DDAAA0A2A56E0C000B3D27B /* TypePhoneCollectionViewCell.swift in Sources */,
 				6D51E2F72A4CA88C00CD53AE /* AddressViewController.swift in Sources */,
 				6D552BA22A497AEE0095BAF8 /* UIControlExtension.swift in Sources */,
 			);
